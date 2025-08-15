@@ -185,9 +185,9 @@ sudo systemctl restart nginx
 
 ---
 ## 🌐 Access the Websites
-- **VprofileApplication:** [http://192.168.56.11]
+- **VprofileApplication:** Access through Web01  [http://192.168.56.11]
 - **WorkFlow:**
-The user request goes to the Nginx server(used as a load balancer). It forwards the request to the Tomcat server where our application is hosted. after that itforwards that request to RabbitMQ(message broker) to Memcached for caching data. It is connected to the MySQL server where the user information is stored. If the same request comes next time it accesses the data cached in Memcached.
+The user request goes to the Nginx server web01 (used as a load balancer). It forwards the request to the Tomcat server where our application is hosted. after that itforwards that request to RabbitMQ(message broker) to Memcached for caching data. It is connected to the MySQL server where the user information is stored. If the same request comes next time it accesses the data cached in Memcached.
 ---
 ## 🛑 Stopping and Removing the VM
 Stop the VM:
